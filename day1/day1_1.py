@@ -42,7 +42,6 @@ print(type(d))
          |           |                      |                    |
 list[]   |  yes      |         yes          |         yes        |
 tuple()  |  yes      |         no           |         yes        |
-set{}    |  no       |         yes          |         no         |
 """
 
 #list
@@ -74,13 +73,15 @@ print(t[7])
 
 # change element via typecasting to lists
 
-t1=(20,30,50)  # change 
+t1=(20,30,50)  # change 50 to 500 and append 600
 
+temp_t = list(t1)
+temp_t[2] = 500
+temp_t.append(600)
 
+t1 = tuple(temp_t)
 
-
-
-
+print(t1)
 
 
 
@@ -94,6 +95,23 @@ t1=(20,30,50)  # change
   
 
 """
+s = {5,5,6,7,8,9,0}
+print(s)  #output: {0, 5, 6, 7, 8, 9}
+
+s.add(77)
+s.remove(5)
+print(s)   #output: {0, 6, 7, 8, 9, 77}
+
+#remove duplicate elements from tuple
+t2=(2,2,2,3,34,4,45,5,56,6,6,4,4,4)
+
+temp_t=set(t2)
+t2=tuple(temp_t)
+
+print(t2)  #output: (2, 3, 34, 4, 5, 6, 45, 56)
 
 
+#dictionaries = {key,value}
+"""
 
+"""
