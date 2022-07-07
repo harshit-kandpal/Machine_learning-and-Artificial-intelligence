@@ -4,8 +4,8 @@ Python
  features 
  -->high level language
  -->user friendly
- -->
- -->
+ -->interpreted
+ -->general purpose
 
 
 commands
@@ -16,11 +16,11 @@ commands
  f9       --> run code specific line
  
 Data types
- 1. numeric
- 2. text 
+ 1. numeric: int,float
+ 2. text: string, char
  3. boolean
- 4. sequence
- 5. mapping: dictionaries
+ 4. sequence: list[], tuples()
+ 5. mapping: dictionaries{key,value}
  6. set{}
 """
 
@@ -38,10 +38,10 @@ print(type(d))
 #list & tuple
 
 """
-         | ordered   |        changable     |     duplicate items|
-         |           |                      |                    |
-list[]   |  yes      |         yes          |         yes        |
-tuple()  |  yes      |         no           |         yes        |
+         | ordered|changable|duplicate items|
+         |        |         |               |
+list[]   |  yes   | yes     |    yes        |
+tuple()  |  yes   | no      |    yes        |
 """
 
 #list
@@ -141,10 +141,13 @@ print(d1)
 
 #dictionaries operations 
 
+print(d1)
+print(d1[1])
+print(d1[2]["lang"])
 
+d1[2]["lang"].append("da")
 
-
-
+print(d1[2]["lang"])
 
 #is operator and id(address)
 
