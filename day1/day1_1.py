@@ -113,5 +113,67 @@ print(t2)  #output: (2, 3, 34, 4, 5, 6, 45, 56)
 
 #dictionaries = {key,value}
 """
-
+     values --> Can be repeated 
+     key    --> Cannot be repeated
+     
 """
+
+
+d = {"india":"delhi",
+     "delhi":"new-delhi",
+     "punjab":"chandigarh",
+     "kashmir":"srinagar",
+     "kashmir":"jammu",
+     "australia":"cannaberra"}
+
+
+print(d)
+
+
+#nested dictionarires
+
+d1 = {1:{"name":"aman","contact":1245678,"lang":["c++","java"]},
+      2:{"name":"baman","contact":998765,"lang":["java","python"]},
+      3:{"name":"chaman","contact":567890,"lang":["da","ml"]},
+      4:{"name":"dhaman","contact":987633,"lang":["java","r"]}}
+
+print(d1)
+
+#dictionaries operations 
+
+
+
+
+
+
+#is operator and id(address)
+
+
+a=5
+b=5
+
+
+
+print(a==b)
+print(a is b)
+
+x = [1,2,3]
+y = [1,2,3]
+
+print(id(a))
+print(id(b))
+
+print(x==y)
+print(x is y)
+
+print(id(x))
+print(id(y))
+
+t1 = (1,2,3)
+t2 = (1,2,3)
+
+print(t1==t2)
+print(t1 is t2)
+
+print(id(t1))
+print(id(t2))
