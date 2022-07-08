@@ -5,6 +5,7 @@ Created on Fri Jul  8 09:54:20 2022
 @author: Harshit kandpal. 
 @day - 2
 """
+
 """
 
 """
@@ -23,6 +24,9 @@ elif username != "python" and password == "python22":
 else:
     print("wrong username and password")
     
+    
+    
+
 """
 # billing program
 
@@ -67,3 +71,111 @@ if a%2 == 0:
         print("Lesser")
 else:
     print("False")
+
+"""
+LOOP
+  1: for
+  2: while
+"""
+
+
+L = [1,3,34,5,65,2,2,23,54,45,23,2]
+
+for i in L:
+    print("hi")
+    
+    
+for i in range(1,11,1):      #1 to 10
+    print(i)
+for i in range(1,11):        #1 to 10 cause base step is always 1 if not specified
+    print(i)
+    
+    
+"""
+print
+    
+    3 odd
+    6 even
+    9 odd
+    12 even
+    15 odd
+    18 even
+    21 odd
+    24 even
+    27 odd
+    30 even
+"""
+    
+for i in range(3,31,3):
+    if i%2 == 0:
+        print(i, "even")
+    else:
+        print(i,"odd")
+        
+"""
+print
+    
+    3 
+    odd
+    6 
+    even
+    9 
+    odd
+    12
+    even
+    15 
+    odd
+    18 
+    even
+    21 
+    odd
+    24 
+    even
+    27 
+    odd
+    30 
+    even
+    
+"""
+
+for i in range(3,31,3):
+    print(i)
+    if i%2 == 0:        
+        print( "even")
+    else:
+        print("odd")
+        
+#PATTERNS
+        
+"""
+
+*
+**
+***
+****
+*****
+
+"""
+
+n = int(input("enter"))
+for i in range (0,n):
+    for j in range (0,i+1):
+        print('*' ,end = "")
+    print()
+    
+    
+"""
+
+*****
+****
+***
+**
+*
+
+"""
+
+n = int(input("enter"))
+for i in range (n,0,-1):
+    for j in range (0,i):
+        print('*' ,end = "")
+    print()
