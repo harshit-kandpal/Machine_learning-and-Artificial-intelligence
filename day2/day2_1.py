@@ -105,13 +105,26 @@ print
     27 odd
     30 even
 """
-    
+
+
+#with for loop  
 for i in range(3,31,3):
     if i%2 == 0:
         print(i, "even")
     else:
         print(i,"odd")
+    
+    
+#with while loop
+i=3
+while i<31:
+    if i%2 == 0:
+        print(i, "even")
         
+    else:
+        print(i,"odd")
+    i+=3
+    
 """
 print
     
@@ -178,4 +191,108 @@ n = int(input("enter"))
 for i in range (n,0,-1):
     for j in range (0,i):
         print('*' ,end = "")
+    print()
+    
+
+
+"""
+
+    *
+   **
+  ***
+ ****
+*****
+
+"""
+
+n = int(input("enter"))
+for i in range (0,n+1):
+    for j in range (n,0,-1):
+         if(j<=i): print("*" ,end = "")
+         else: print(" ",end = "")
+    print()
+
+
+
+    
+    """
+
+*****
+ ****
+  ***
+   **
+    *
+"""
+
+n = int(input("enter"))
+for i in range (0,n):
+    for j in range (0,n):
+       if(j<i): print(' ' ,end = "")
+       else: print("*",end = "")
+    print()
+
+
+"""
+1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
+
+"""
+num=1
+n = int(input("enter"))
+for i in range (0,n):
+    for j in range (0,i+1):
+        print(num,end = " ")
+        num+=1
+    print()
+
+"""
+    *
+   ***
+  *****
+ *******
+*********
+
+"""
+
+n = int(input("enter"))
+for i in range (0,n+1):
+    for j in range (n,0,-1):
+         if(j<=i): print("*" ,end = "")
+         else: print(" ",end = "")
+    for k in range (0,i+1):
+        print('*' ,end = "")
+    print()
+
+
+"""
+    *
+   ***
+  *****
+ *******
+*********
+*********
+ *******
+  *****
+   ***
+    *
+    
+"""
+
+n = int(input("enter"))
+for i in range (0,n+1):
+    for j in range (n,0,-1):
+         if(j<=i): print("*" ,end = "")
+         else: print(" ",end = "")
+    for k in range (0,i+1):
+        print('*' ,end = "")
+    print()
+for i in range (0,n):
+    for j in range (0,n):
+       if(j<=i): print(' ' ,end = "")
+       else: print("*",end = "")
+    for k in range (n-i,0,-1):
+       print("*" ,end = "")
     print()
